@@ -169,6 +169,10 @@ public class CoreTest {
         List result = null;
         try {
             result = instance.intrisecParseDocuments(new File("demo"));
+<<<<<<< HEAD
+            int av = 0;
+=======
+>>>>>>> origin/master
         } catch (InvalidDocumentInput ex) {
             fail(ex.toString());
         }

@@ -74,9 +74,9 @@ public class TranslationHelper extends Thread {
 
         for (TranslationListener listener : this._listeners) {
             if (document == null) {
-                listener.TranslationComplete(document);
-            } else {
                 listener.TranslationComplete(new ParsedDocument());
+            } else {
+                listener.TranslationComplete(document);
             }
         }
 
